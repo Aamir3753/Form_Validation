@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Class Assignment</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="form_head">
+                <h1>Create account</h1>
+                <p>Example of form validation built with javascript</p>
+            </div>
+            <div class="form_body">
+                <input type="email" id="userEmail" placeholder="Email Address" required>
+                <div class="error" id="errorUserEmail"></div>
+                <input type="text" id ="companyName" placeholder="Company Name" required>
+                <div class="error" id="errorCompanyName"></div>
+                <input type="password" id="password" placeholder="Password">
+                <div class="error" id="errorPassword"></div>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                <div class="error" id="errorConfirmPassword"></div>
+                <select name="state" id="chooseState" >
+                    <option value="" selected id="optPlaceholder">Choose Your State</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="india">India</option>
+                    <option value="china">china</option>
+                </select>
+                <div class="error" id="errorChooseState"></div>
+            </div>
+            <div class="form_footer">
+                <button type="submit" id="createAccount">CREATE ACCOUNT</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
