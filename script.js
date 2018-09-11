@@ -60,7 +60,7 @@ function confirmPasswordIsVal() {
         return true;
     }
 }
-chooseState.onclick = function () {
+chooseState.onchange = function () {
     if (chooseState.value == "") {
         chooseState.style = "color:#8e8b8a;"
     }
@@ -81,11 +81,17 @@ function chooseStateIsVal() {
     }
 }
 createAccount.onclick = function () {
-    if (userEmailIsVal() && companyNameIsVal() && passwordIsVal() && confirmPasswordIsVal() && chooseStateIsVal()) {
-        alert("Form submited");
+    userEmailIsVal();
+    companyNameIsVal();
+    passwordIsVal();
+    confirmPasswordIsVal();
+    chooseStateIsVal();
+    if (userEmailIsVal() && companyNameIsVal() && passwordIsVal()
+        && confirmPasswordIsVal() && chooseStateIsVal()) {
+        alert("Form  is submited");
     }
     else {
         event.preventDefault();
-        console.log("Form is not submited");
+        console.log("Form is  not submited");
     }
 }
