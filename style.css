@@ -39,6 +39,12 @@ color:#93908d;
 .form_body>select{
     color:#8e8b8a;
 }
+.form_body>select>option{
+    color:black;
+}
+#optPlaceholder{
+    color:#8e8b8a;    
+}
 input::placeholder{
     font-size:16px;
     color:#8e8b8a

@@ -52,7 +52,7 @@ confirmPassword.onblur = confirmPasswordIsVal;
 function confirmPasswordIsVal() {
     if (confirmPassword.value != password.value) {
         errorConfirmPassword.style = "color:red;display:block";
-        errorConfirmPassword.innerText = "Password do not match";
+        errorConfirmPassword.innerText = "Passwords do not match";
         return false;
     }
     else {
